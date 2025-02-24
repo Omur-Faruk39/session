@@ -22,6 +22,7 @@ const studentDataSlice = createSlice({
   reducers: {
 
     add: (state, action) => {
+      console.log(action);
       return [...state, action.payload];
     },
     

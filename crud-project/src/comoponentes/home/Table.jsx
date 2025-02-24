@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 
 function Table() {
   const studentData = useSelector((state) => state.studentData);
+  console.log(studentData);
 
 
   return (
