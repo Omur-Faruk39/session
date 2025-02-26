@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { NavLink } from "react-router";
 
 function Table() {
   const studentData = useSelector((state) => state.studentData);
@@ -29,7 +30,9 @@ function Table() {
                 <td>{student.degree}</td>
                 <td>{student.phone}</td>
                 <td>
-                  <a>Edit</a>
+
+                  <NavLink to={'/edite'}>edite</NavLink>
+
                   <a>Delete</a>
                 </td>
               </tr>

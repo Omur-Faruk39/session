@@ -7,6 +7,7 @@ import {
 import Home from "./comoponentes/home/Home";
 import Root from "./comoponentes/root/Root";
 import Add from "./comoponentes/add/Add";
+import Edite from "./comoponentes/edite/Edite";
 
 
 const route = createBrowserRouter(
@@ -14,6 +15,7 @@ const route = createBrowserRouter(
     <Route path="/" element={<Root />}>
       <Route path="" element={<Home />} />
       <Route path="add" element={<Add />} />
+      <Route path="edite" element={<Edite />} />
     </Route>
   )
 );

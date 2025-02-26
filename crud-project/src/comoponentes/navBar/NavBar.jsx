@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <ul>
       <li>
-        <NavLink className='m-6' to={''}>home</NavLink>
+        <NavLink to={''}>home</NavLink>
       </li>
       <li>
         <NavLink to={'/add'}>add</NavLink>
