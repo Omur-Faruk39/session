@@ -15,7 +15,7 @@ const route = createBrowserRouter(
     <Route path="/" element={<Root />}>
       <Route path="" element={<Home />} />
       <Route path="add" element={<Add />} />
-      <Route path="edite" element={<Edite />} />
+      <Route path="edite/:id" element={<Edite />} />
     </Route>
   )
 );

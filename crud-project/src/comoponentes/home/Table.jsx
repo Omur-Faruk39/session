@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 function Table() {
   const studentData = useSelector((state) => state.studentData);
-  console.log(studentData);
+  // console.log(studentData);
 
 
   return (
@@ -31,7 +31,7 @@ function Table() {
                 <td>{student.phone}</td>
                 <td>
 
-                  <NavLink to={'/edite'}>edite</NavLink>
+                  <NavLink to={`/edite/${student.id}`}>edite</NavLink>
 
                   <a>Delete</a>
                 </td>
