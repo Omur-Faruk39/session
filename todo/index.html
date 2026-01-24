@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="#">
+    <input type="text">
+    <input type="submit" onclick="fun()">
+  </form>
+  <div></div>
+
+  <script>
+    const input = document.querySelectorAll('input')[0];
+    const render = document.querySelector('div');
+
+    const todos = [];
+
+
+    function fun() {
+      const value = input.value;
+
+      todos.push(value);
+
+      const tag = todos.sort();
+
+    let element = '';
+      
+
+      for (let i = 0; i < tag.length; i++) {
+        element += `<p> ${tag[i]}</p>`;
+      }
+      render.innerHTML = element;
+
+
+    }
+
+  </script>
+</body>
+
+</html>

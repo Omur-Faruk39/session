@@ -1,17 +1,37 @@
 // import style from './style.module.css';
 
-function App() {
+import React, { PureComponent, Component } from "react";
 
-  const func = (text) => {
-    alert(text)
+// import { useEffect, useState } from "react";
+
+// function App() {
+//   const [value, setValue] = useState(false);
+
+//   useEffect(() => {
+//     console.log(document.querySelector('button'))
+//     return () => {
+//       alert('this is a alart');
+//     }
+//   }, []);
+
+//   return (
+//     <button onClick={() => setValue((pre) => !pre)}>
+//       click
+//     </button>
+//   );
+// }
+
+class App extends Component {
+
+
+
+  render() {
+    return (
+      <button>
+        click
+      </button>
+    );
   }
-
-
-  return (
-    <button onClick={ () => { func('hello world!')} }>
-      hello world
-    </button>
-  );
 }
 
 export default App;
